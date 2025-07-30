@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2025 여름 휴가 계획</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .section {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 12px;
+        position: relative;
+      }
+      a {
+        color: #007acc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .copy-btn {
+        margin-left: 10px;
+        font-size: 12px;
+        padding: 3px 6px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007acc;
+        color: white;
+        cursor: pointer;
+      }
+      .copy-btn:hover {
+        background-color: #005b9e;
+      }
+      .desc {
+        font-size: 14px;
+        color: #333;
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>2025 여름 휴가 계획 (1)</h1>
+
+    <div class="section">
+      <h2>📍 여행 코스</h2>
+      <ul>
+        <li>
+          <a href="https://map.naver.com/v5/search/구와우 마을" target="_blank">구와우 마을</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 황지동 287-22')">주소 복사</button>
+          <div class="desc">강원 태백시 황지동 287-22 (입장료: 7,000원)</div>
+        </li>
+        <li>
+          <a href="https://map.naver.com/v5/search/검룡소" target="_blank">검룡소</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 창죽동 산1-1')">주소 복사</button>
+          <div class="desc">강원 태백시 창죽동 산1-1</div>
+        </li>
+        <li>점심식사: 물닭갈비</li>
+        <li>
+          <a href="https://map.naver.com/v5/search/황지연못" target="_blank">황지연못</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 황지연못길 12')">주소 복사</button>
+          <div class="desc">강원 태백시 황지연못길 12 (문화관광해설사의집)</div>
+        </li>
+        <li>
+          <a href="https://map.naver.com/v5/search/용연동굴" target="_blank">용연동굴</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 태백로 283-29')">주소 복사</button>
+          <div class="desc">강원 태백시 태백로 283-29 (입장료: 3,500원)</div>
+        </li>
+        <li>
+          <a href="https://map.naver.com/v5/search/몽토랑산양목장" target="_blank">몽토랑산양목장</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 효자1길 27-2')">주소 복사</button>
+          <div class="desc">강원 태백시 효자1길 27-2 (입장료: 5,000원)</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🍽️ 음식점</h2>
+      <ul>
+        <li>
+          <a href="https://map.naver.com/v5/search/태백 닭갈비" target="_blank">태백 닭갈비</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 중앙남1길 10')">주소 복사</button>
+          <div class="desc">강원 태백시 중앙남1길 10</div>
+        </li>
+        <li>
+          <a href="https://map.naver.com/v5/search/엄마손태백물닭갈비" target="_blank">엄마손태백물닭갈비</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 황지연못길 9')">주소 복사</button>
+          <div class="desc">강원 태백시 황지연못길 9<br />주차: 서황지로 4 (공영주차장)</div>
+        </li>
+        <li>
+          <a href="https://map.naver.com/v5/search/태백실비식당" target="_blank">태백실비식당</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 감천로 8')">주소 복사</button>
+          <div class="desc">강원 태백시 감천로 8</div>
+        </li>
+        <li>
+          <a href="https://map.naver.com/v5/search/원조태백실비식당" target="_blank">원조태백실비식당</a>
+          <button class="copy-btn" onclick="copyText('강원 태백시 감천로 4')">주소 복사</button>
+          <div class="desc">강원 태백시 감천로 4</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>숙소</h2>
+      <ul>
+        <li>
+          <a href="https://map.naver.com/v5/search/오투리조트">오투리조트</a>
+          <button class="copy-btn" onclick="copyText('강원특별자치도 태백시 서학로 861')">주소 복사</button>
+          <div class="desc">강원특별자치도 태백시 서학로 861</div>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      function copyText(text) {
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert("주소가 복사되었습니다:\n" + text);
+          })
+          .catch((err) => {
+            alert("복사 실패: " + err);
+          });
+      }
+    </script>
+  </body>
+</html>
